@@ -25,10 +25,11 @@ export default defineComponent({
     const columns = [
       { title: 'Название', dataIndex: 'name', key: 'name' },
       { title: 'Бюджет', dataIndex: 'price', key: 'price' },
+      {title: 'Контакт', dataIndex: 'contact_name', key:'contact_name'},
       { title: 'Статус', dataIndex: 'status_name', key: 'status_name' },
-      { title: 'Ответственный', dataIndex: 'owner', key: 'owner' },
-      { title: 'Дата создания', dataIndex: 'created_at', key: 'created_at'
-      },
+      { title: 'Ответственный', dataIndex: 'responsible_user_name', key: 'responsible_user_name' },
+      { title: 'Дата создания', dataIndex: 'created_at', key: 'created_at'},
+
     ];
 
     const fetchLeads = async () => {
@@ -61,6 +62,7 @@ export default defineComponent({
       filterLeads,
     };
   },
+
 });
 </script>
 
